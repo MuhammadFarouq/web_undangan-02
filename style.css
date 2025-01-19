@@ -1,0 +1,122 @@
+:root {
+  --mt: 16px;
+  --st: 13px;
+  --bg: #0c0c0c;
+  --main: #e79e4f;
+  --sec: #a05344;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: "Work Sans", arial;
+}
+
+.info h2,
+.wt h2,
+.story h2,
+.acara h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2,
+.comment h2 {
+  font-family: "Sacramento", cursive;
+  font-size: var(--mt);
+  color: var(--main);
+  text-align: center;
+  padding: 15px 0;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: var(--st);
+  color: var(--sec);
+  text-align: center;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  background-image: url(img/couple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info {
+  background-image: url("img/floralOpacity.png");
+  background-blend-mode: exclusion;
+  background-color: var(--bg);
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  color: white;
+  height: 100vh;
+}
+
+.info .container {
+  margin-top: 30px;
+}
+
+.info img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  margin-top: 30px;
+}
+
+.info h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 0 !important;
+  padding: 10px;
+  color: var(--main);
+  background-color: rgba(160, 83, 68, 0.7);
+  border-radius: 0 0 30px 30px;
+  color: white;
+}
+
+.info p {
+  text-align: center;
+  color: var(--sec);
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.wt .container {
+  background-color: var(--bg);
+  color: var(--sec);
+  text-align: center;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.time-box {
+  text-align: center;
+  background-color: rgba(219, 203, 189, 0.6);
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 70px;
+}
+.time-box .value {
+  font-size: 2.5rem;
+  color: var(--main);
+}
+.time-box .label {
+  font-size: 1rem;
+  color: white;
+}
